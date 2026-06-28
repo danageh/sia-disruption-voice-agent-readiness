@@ -1,0 +1,59 @@
+[
+  {
+    "scenario": "Alternative flight request",
+    "handoff_summary": {
+      "customer_intent": "reaccommodation_request",
+      "flight_number": "SQ622",
+      "travel_date": "2026-06-02",
+      "route": "Singapore to Osaka",
+      "known_disruption": "Typhoon Jangmi retiming",
+      "booking_channel": "direct_sia",
+      "escalation_tier": "Tier 2: Structured human handoff",
+      "escalation_reason": "Customer wants alternative flight handling, which requires airline review in v1.",
+      "customer_preferred_outcome": "Alternative flight to Osaka if available",
+      "open_questions_for_human": [
+        "Are alternative flights available?",
+        "Can customer be moved to another suitable itinerary?",
+        "Should refund path be offered if reaccommodation is unavailable?"
+      ]
+    }
+  },
+  {
+    "scenario": "Missed onward connection",
+    "handoff_summary": {
+      "customer_intent": "missed_connection",
+      "flight_number": "SQ637",
+      "travel_date": "2026-06-03",
+      "route": "Tokyo Narita to Singapore",
+      "known_disruption": "Typhoon Jangmi retiming",
+      "booking_channel": "direct_sia",
+      "escalation_tier": "Tier 3: Priority escalation",
+      "escalation_reason": "Customer may miss onward travel and needs urgent human review.",
+      "customer_preferred_outcome": "Help preserving onward travel plan",
+      "open_questions_for_human": [
+        "Is the onward flight on the same itinerary?",
+        "What alternatives are available?",
+        "Does the customer need immediate callback or airport assistance?"
+      ]
+    }
+  },
+  {
+    "scenario": "Compensation or exception request",
+    "handoff_summary": {
+      "customer_intent": "compensation_or_exception",
+      "flight_number": "SQ636",
+      "travel_date": "2026-06-02",
+      "route": "Singapore to Tokyo Haneda",
+      "known_disruption": "Typhoon Jangmi retiming",
+      "booking_channel": "direct_sia",
+      "escalation_tier": "Tier 3: Priority escalation",
+      "escalation_reason": "Customer is asking about hotel compensation, which should not be decided by the v1 agent.",
+      "customer_preferred_outcome": "Compensation review",
+      "open_questions_for_human": [
+        "What expense is the customer claiming?",
+        "What documentation is required?",
+        "What policy or claims path applies?"
+      ]
+    }
+  }
+]

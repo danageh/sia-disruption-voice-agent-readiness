@@ -1,0 +1,67 @@
+{
+  "affected_flights": {
+    "SQ622": {
+      "route": "Singapore to Osaka",
+      "original_date": "2026-06-02",
+      "retimed_departure": "2026-06-03 12:00 local time",
+      "retimed_arrival": "2026-06-03 19:25 local time",
+      "event": "Typhoon Jangmi retiming"
+    },
+    "SQ623": {
+      "route": "Osaka to Singapore",
+      "original_date": "2026-06-02",
+      "retimed_departure": "2026-06-03 21:25 local time",
+      "retimed_arrival": "2026-06-04 02:45 local time",
+      "event": "Typhoon Jangmi retiming"
+    },
+    "SQ631": {
+      "route": "Tokyo Haneda to Singapore",
+      "original_date": "2026-06-03",
+      "retimed_departure": "2026-06-03 23:55 local time",
+      "retimed_arrival": "2026-06-04 06:00 local time",
+      "event": "Typhoon Jangmi retiming"
+    },
+    "SQ636": {
+      "route": "Singapore to Tokyo Haneda",
+      "original_date": "2026-06-02",
+      "retimed_departure": "2026-06-03 14:10 local time",
+      "retimed_arrival": "2026-06-03 22:05 local time",
+      "event": "Typhoon Jangmi retiming"
+    },
+    "SQ637": {
+      "route": "Tokyo Narita to Singapore",
+      "original_date": "2026-06-03",
+      "retimed_departure": "2026-06-03 22:15 local time",
+      "retimed_arrival": "2026-06-04 04:15 local time",
+      "event": "Typhoon Jangmi retiming"
+    },
+    "SQ11": {
+      "route": "Los Angeles to Singapore via Tokyo Narita",
+      "original_date": "2026-06-03",
+      "retimed_departure": "2026-06-03 17:10 local time",
+      "retimed_arrival": "2026-06-05 03:45 local time",
+      "event": "Typhoon Jangmi retiming"
+    }
+  },
+  "policy_boundaries": {
+    "direct_sia": "Customer can be guided to SIA assistance or refund request path, subject to validation.",
+    "travel_agent": "Customer should contact the travel agent or original purchasing channel for assistance.",
+    "unknown": "Agent should confirm booking channel before giving specific next-step guidance."
+  },
+  "agent_boundaries": {
+    "can_do": [
+      "confirm whether known flight is listed in the disruption advisory",
+      "collect booking and travel details",
+      "identify customer intent",
+      "guide customer to appropriate next step",
+      "create handoff summary"
+    ],
+    "cannot_do_in_v1": [
+      "approve refunds",
+      "confirm rebooking",
+      "decide compensation",
+      "make policy exceptions",
+      "override third-party booking channel"
+    ]
+  }
+}

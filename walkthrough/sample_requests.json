@@ -1,0 +1,82 @@
+[
+  {
+    "request_id": "REQ001",
+    "customer_message": "Hi, I am on SQ622 from Singapore to Osaka on 2 June. Is my flight still leaving today?",
+    "flight_number": "SQ622",
+    "travel_date": "2026-06-02",
+    "booking_channel": "direct_sia",
+    "expected_intent": "flight_status_check"
+  },
+  {
+    "request_id": "REQ002",
+    "customer_message": "My SIA flight was retimed because of the typhoon. Where do I submit a refund request?",
+    "flight_number": "SQ623",
+    "travel_date": "2026-06-02",
+    "booking_channel": "direct_sia",
+    "expected_intent": "refund_path_guidance"
+  },
+  {
+    "request_id": "REQ003",
+    "customer_message": "My Osaka flight is now tomorrow. I am not sure if I should refund or ask for another flight.",
+    "flight_number": "SQ622",
+    "travel_date": "2026-06-02",
+    "booking_channel": "direct_sia",
+    "expected_intent": "refund_or_reaccommodation_triage"
+  },
+  {
+    "request_id": "REQ004",
+    "customer_message": "Can you put me on another flight to Osaka? The new timing does not work for me.",
+    "flight_number": "SQ622",
+    "travel_date": "2026-06-02",
+    "booking_channel": "direct_sia",
+    "expected_intent": "reaccommodation_request"
+  },
+  {
+    "request_id": "REQ005",
+    "customer_message": "I booked through a travel agent. Can Singapore Airlines refund me directly?",
+    "flight_number": "SQ631",
+    "travel_date": "2026-06-03",
+    "booking_channel": "travel_agent",
+    "expected_intent": "booking_channel_routing"
+  },
+  {
+    "request_id": "REQ006",
+    "customer_message": "Because of the new arrival time, I will miss my onward flight. I need help now.",
+    "flight_number": "SQ637",
+    "travel_date": "2026-06-03",
+    "booking_channel": "direct_sia",
+    "expected_intent": "missed_connection"
+  },
+  {
+    "request_id": "REQ007",
+    "customer_message": "My hotel is non-refundable because of this delay. Will SIA compensate me?",
+    "flight_number": "SQ636",
+    "travel_date": "2026-06-02",
+    "booking_channel": "direct_sia",
+    "expected_intent": "compensation_or_exception"
+  },
+  {
+    "request_id": "REQ008",
+    "customer_message": "My Japan flight changed. What should I do?",
+    "flight_number": null,
+    "travel_date": null,
+    "booking_channel": "unknown",
+    "expected_intent": "unclear_details"
+  },
+  {
+    "request_id": "REQ009",
+    "customer_message": "Can you check my flight? The website is not showing the latest timing.",
+    "flight_number": "SQ999",
+    "travel_date": "2026-06-03",
+    "booking_channel": "direct_sia",
+    "expected_intent": "flight_lookup_failure"
+  },
+  {
+    "request_id": "REQ010",
+    "customer_message": "I have explained this already. I want a human agent now.",
+    "flight_number": "SQ11",
+    "travel_date": "2026-06-03",
+    "booking_channel": "direct_sia",
+    "expected_intent": "human_support_request"
+  }
+]
