@@ -32,6 +32,8 @@ sia-disruption-voice-agent-readiness/
     01_current_workflow_map.md
     02_voice_agent_readiness_assessment.md
     03_agent_logic_map.md
+    04_production_readiness_checklist.md
+    05_executive_value_brief.md
   walkthrough/
     router.py
     sample_requests.json
@@ -53,3 +55,22 @@ The script reads the sample requests, uses mock tool responses, assigns intent a
 ## Design Thesis
 
 The strongest use case is not full automation. The strongest use case is faster triage, safer guidance, better information capture, and cleaner human handoff during disruption events.
+
+## v1 Boundaries and Future Capability Gates
+
+The v1 agent is intentionally scoped as a triage and guidance layer.
+
+It can support:
+
+- flight disruption confirmation
+- refund and reaccommodation triage
+- booking-channel routing
+- structured information capture
+- tiered escalation
+- human handoff summaries
+
+It does not approve refunds, confirm rebookings, decide compensation, make policy exceptions, or resolve third-party bookings beyond routing guidance.
+
+Those capabilities are not excluded because they lack value. They are excluded from v1 because they require validated policy rules, customer-authorized system access, auditability, exception handling, and clear ownership of customer-impacting decisions.
+
+A later phase could explore limited execution for tightly defined cases, but only after data access, policy boundaries, risk controls, and human review thresholds are validated.
