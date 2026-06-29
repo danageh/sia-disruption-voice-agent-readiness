@@ -74,3 +74,19 @@ It does not approve refunds, confirm rebookings, decide compensation, make polic
 Those capabilities are not excluded because they lack value. They are excluded from v1 because they require validated policy rules, customer-authorized system access, auditability, exception handling, and clear ownership of customer-impacting decisions.
 
 A later phase could explore limited execution for tightly defined cases, but only after data access, policy boundaries, risk controls, and human review thresholds are validated.
+
+## Project Documents
+
+- [Current Workflow Map](docs/01_current_workflow_map.md)
+- [Voice-Agent Readiness Assessment](docs/02_voice_agent_readiness_assessment.md)
+- [Agent Logic Map](docs/03_agent_logic_map.md)
+- [Production Readiness Checklist](docs/04_production_readiness_checklist.md)
+- [Executive Value Brief](docs/05_executive_value_brief.md)
+- [Python/JSON Walkthrough](walkthrough/README_walkthrough.md)
+
+## Sources
+
+- [Singapore Airlines advisory on flights affected by Typhoon Jangmi](https://www.singaporeair.com/zh_CN/sg/corporate/newsroom/newsalert-listing/advisory-on-singapore-airlines-flights-affected-by-typhoon-jangm/)
+- [Singapore Airlines cancellations and refunds guidance](https://www.singaporeair.com/en_UK/sg/travel-info/charges-changes/cancellations-refunds/)
+
+This project uses public information only and does not assume access to Singapore Airlines internal systems, policies, customer records, or operational workflows.
